@@ -1,0 +1,25 @@
+<p style="color: green"><%= notice %></p>
+
+<h1><%= t('global.menu.developers') %></h1>
+<table class="table table-striped table-bordered table-hover">
+<thead style="background-color: #01BD95;" >
+<tr>
+<th><%= t('global.table.first_name') %></th>
+<th><%= t('global.table.last_name') %></th>
+<th><%= t('global.table.email') %></th>
+<th><%= t('global.table.dob') %></th>
+<th colspan="3"></th>
+</tr>
+</thead>
+
+
+<tbody id="developers">
+  <% @developers.each do |developer| %>
+    <tr>
+    <%= render developer %>
+      <td><%= link_to t('global.forms.show_developer'), developer %></td>
+    </tr>
+  <% end %>
+</tbody>
+</table>
+<%= link_to t('global.forms.new_developer'), new_developer_path, class:"btn btn-success" %>

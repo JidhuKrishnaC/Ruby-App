@@ -1,0 +1,26 @@
+<p style="color: green"><%= notice %></p>
+
+<table class="table table-striped table-bordered table-hover">
+<thead style="background-color: #01BD95;">
+<tr>
+<th><%= t('global.table.first_name') %></th>
+<th><%= t('global.table.last_name') %></th>
+<th><%= t('global.table.email') %></th>
+<th><%= t('global.table.dob') %></th>
+<th colspan="3"></th>
+</tr>
+</thead>
+
+
+<tbody id="developers">
+    <tr>
+    <%= render @developer %>
+    <td><%= link_to t('global.forms.edit_developer'), edit_developer_path(@developer) %></td>
+    <td><%= link_to t('global.forms.back_developer'), developers_path %></td>
+    </tr>
+</tbody>
+</table>
+
+<div>
+  <%= button_to t('global.forms.destroy_developer'), @developer, method: :delete, class:"btn btn-success" %>
+</div>

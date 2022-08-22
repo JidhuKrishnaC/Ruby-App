@@ -1,0 +1,10 @@
+<h1><%= t('global.menu.edit_developer') %></h1>
+
+<%= render "form", developer: @developer %>
+
+<br>
+
+<div>
+  <%= link_to t('global.forms.edit_developer'), @developer %> |
+  <%= link_to t('global.forms.back_developers'), developers_path %>
+</div>

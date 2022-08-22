@@ -1,0 +1,24 @@
+<div id="<%= dom_id task %>">
+  <td>
+    <%# <strong>Taskname:</strong> %>
+    <%= task.taskname %>
+  </td>
+
+  <td>
+    <%# <strong>Duedate:</strong> %>
+    <%= task.duedate %>
+  </td>
+
+  <td>
+    <%# <strong>Status:</strong> %>
+    <%= task.status %>
+  </td>
+
+  <td>
+    <% value={} %>
+    <% Developer.all.each{|u| value[u.id] = u.firstname}%>
+    <%# <strong>Developer:</strong> %>
+    <%= value[task.user_id] %>
+  </td>
+
+</div>
