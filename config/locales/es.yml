@@ -1,0 +1,48 @@
+es:
+  login:
+    log_in: "Inicia sesión"
+    remember_me: "Recuérdame"
+    password: "contraseña"
+    password_confirmation: "confirmación de contraseña"
+    forgot_password: "¿Ha olvidado su contraseña?"
+  home:
+    index:
+      welcome: "Bienvenido"
+      message: "¿En qué idioma desea proceder?"
+  global:
+    forms:
+      submit_developer: "Enviar"
+      show_task: "Mostrar esta tarea"
+      new_task: "Nueva tarea"
+      show_developer: "Mostrar a este desarrollador"
+      new_developer: "Nuevo desarrollador"
+      back_developers: "Volver a los desarrolladores"
+      back_task: "Volver a las tareas"
+      edit_developer: "Editar este desarrollador"
+      destroy_developer: "Destruye este desarrollador"
+      edit_task: "Editar esta tarea"
+      destroy_task: "Destruir esta tarea"
+      update_developer: "Desarrollador de actualizaciones"
+      update_task: "Tarea de actualización"
+      messages:
+        errors:
+          one: "Un error prohibió que se guardaran estos comentarios"
+          other: "%{count} Errores que prohíben guardar estos comentarios"
+    menu:
+      tasks: "Tareas"
+      developers: "Desarrolladores"
+      sign_out: "Cerrar sesión"
+      sign_up: "Únete"
+      sign_in: "Inicia sesión"
+      task_app: "Aplicación de tareas"
+      edit_developer: "Desarrollador de edición"
+      edit_task: "Tarea de edición"
+    table:
+      task_name: "Nombre de la tarea"
+      due_date: "Fecha de vencimiento"
+      status: "Estado"
+      developer: "Desarrollador"
+      first_name: "Nombre"
+      last_name: "Apellido"
+      email: "Correo electrónico"
+      dob: "Fecha de nacimiento"

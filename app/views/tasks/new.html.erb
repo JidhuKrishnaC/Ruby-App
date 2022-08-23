@@ -1,0 +1,9 @@
+<h1><%=t('global.forms.new_task')%></h1>
+
+<%= render "form", task: @task %>
+
+<br>
+
+<div>
+  <%= link_to t('global.forms.back_task'), tasks_path, class:"btn btn-success" %>
+</div>

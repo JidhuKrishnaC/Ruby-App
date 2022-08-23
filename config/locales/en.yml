@@ -1,0 +1,80 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t "hello"
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t("hello") %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   "true": "foo"
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+en:
+  login:
+    log_in: "Log in"
+    remember_me: "remember me"
+    password: "password"
+    password_confirmation: "password confirmation"
+    forgot_password: "Forgot your password?"
+  global:
+    forms:
+      submit_developer: "Submit"
+      show_task: "Show this task"
+      new_task: "New task"
+      show_developer: "Show this developer"
+      new_developer: "New developer"
+      back_developers: "Back to developers"
+      back_task: "Back to tasks"
+      edit_developer: "Edit this developer"
+      destroy_developer: "Destroy this developer"
+      edit_task: "Edit this task"
+      destroy_task: "Destroy this task"
+      update_developer: "Update Developer"
+      update_task: "Update Task"
+      messages:
+        errors:
+          one: "One error prohibited this feedback from being saved"
+          other: "%{count} errors prohibited this feedback from being saved"
+    menu:
+      tasks: "Tasks"
+      developers: "Developers"
+      sign_out: "Sign Out"
+      sign_up: "Sign Up"
+      sign_in: "Sign In"
+      task_app: "Task App"
+      edit_developer: "Editing developer"
+      edit_task: "Editing task"
+    table:
+      task_name: "Task Name"
+      due_date: "Due Date"
+      status: "Status"
+      developer: "Developer"
+      first_name: "First Name"
+      last_name: "Last Name"
+      email: "Email"
+      dob: "Date Of Birth"
+  home:
+    index:
+      welcome: "Welcome"
+      message: "In which language do you wish to proceed ?"
+  
