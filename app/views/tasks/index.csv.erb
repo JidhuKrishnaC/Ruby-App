@@ -1,0 +1,10 @@
+<%= fields= [:taskname, :duedate, :status, :developer].join(" ; ")%>
+<% @tasks.each do |t| %>
+<% taskname= t.taskname %>
+<% duedate= t.duedate %>
+<% status= t.status %>
+<% value={} %>
+<% User.all.each{|u| value[u.id] = u.firstname}%>
+<%developer = value[t.user_id] %>
+<%= [taskname, duedate, status, developer].join(" ; ") %>
+<%end%>

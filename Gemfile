@@ -17,6 +17,12 @@ gem "puma", "~> 5.0"
 
 gem 'devise', '~> 4.8', '>= 4.8.1'
 
+gem 'rufus-scheduler'
+
+gem 'wicked_pdf'
+
+gem 'wkhtmltopdf-binary'
+
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 

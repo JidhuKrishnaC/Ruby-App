@@ -24,6 +24,8 @@ es:
       destroy_task: "Destruir esta tarea"
       update_developer: "Desarrollador de actualizaciones"
       update_task: "Tarea de actualización"
+      export_csv: "Exportar a CSV"
+      export_pdf: "Exportar a PDF"
       messages:
         errors:
           one: "Un error prohibió que se guardaran estos comentarios"

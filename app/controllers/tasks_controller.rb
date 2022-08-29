@@ -25,6 +25,7 @@ class TasksController < ApplicationController
 
     respond_to do |format|
       if @task.save
+        PostMailer.with(user: current_login, task: @task).post_created.deliver_now
         format.html { redirect_to task_url(@task), notice: "Task was successfully created." }
         format.json { render :show, status: :created, location: @task }
       else
@@ -38,6 +39,7 @@ class TasksController < ApplicationController
   def update
     respond_to do |format|
       if @task.update(task_params)
+        PostMailer.with(user: current_login, task: @task).post_updated.deliver_now
         format.html { redirect_to task_url(@task), notice: "Task was successfully updated." }
         format.json { render :show, status: :ok, location: @task }
       else
@@ -52,6 +54,7 @@ class TasksController < ApplicationController
     @task.destroy
 
     respond_to do |format|
+      PostMailer.with(user: current_login, task: @task).post_destroyed.deliver_now
       format.html { redirect_to tasks_url, notice: "Task was successfully destroyed." }
       format.json { head :no_content }
     end

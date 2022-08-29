@@ -51,6 +51,8 @@ en:
       destroy_task: "Destroy this task"
       update_developer: "Update Developer"
       update_task: "Update Task"
+      export_csv: "Export to CSV"
+      export_pdf: "Export to PDF"
       messages:
         errors:
           one: "One error prohibited this feedback from being saved"
