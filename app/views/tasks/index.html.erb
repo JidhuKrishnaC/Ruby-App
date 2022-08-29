@@ -24,3 +24,4 @@
 
 <%= link_to t('global.forms.new_task'), new_task_path, class:"btn btn-success" %>
 <%= link_to t('global.forms.export_csv'), tasks_path(format: :csv), download: ["Tasks", Date.today].join(" "), class:"btn btn-success" %>
+<%= link_to t('global.forms.export_pdf'), tasks_path(format: 'pdf'), class:"btn btn-success" %>

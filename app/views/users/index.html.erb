@@ -24,3 +24,5 @@
 </tbody>
 </table>
 <%= link_to t('global.forms.new_developer'), new_user_path, class:"btn btn-success" %>
+<%= link_to t('global.forms.export_csv'), users_path(format: :csv), download: ["Users", Date.today].join(" "), class:"btn btn-success" %>
+<%= link_to t('global.forms.export_pdf'), users_path(format: 'pdf'), class:"btn btn-success" %>

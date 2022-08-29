@@ -4,6 +4,14 @@ class UsersController < ApplicationController
   # GET /users or /users.json
   def index
     @users = User.all
+    respond_to do |format|
+      format.html
+      format.csv
+      format.pdf do
+        pdf = UserPdf.new(@users)
+        send_data pdf.render, filename: 'users.pdf', type: 'application/pdf',disposition: "inline"
+      end
+    end
   end
 
   # GET /users/1 or /users/1.json

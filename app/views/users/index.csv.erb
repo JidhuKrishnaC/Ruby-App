@@ -1,0 +1,8 @@
+<%= fields= [:firstname, :lastname, :email, :dob].join(" ; ")%>
+<% @users.each do |t| %>
+<% firstname= t.firstname %>
+<% lastname= t.lastname %>
+<% email= t.email %>
+<% dob = t.dob %>
+<%= [firstname, lastname, email, dob].join(" ; ") %>
+<%end%>

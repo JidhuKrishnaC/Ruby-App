@@ -4,6 +4,14 @@ class TasksController < ApplicationController
   # GET /tasks or /tasks.json
   def index
     @tasks = Task.all
+    respond_to do |format|
+      format.html
+      format.csv
+      format.pdf do
+        pdf = TaskPdf.new(@tasks)
+        send_data pdf.render, filename: 'tasks.pdf', type: 'application/pdf',disposition: "inline"
+      end
+    end
   end
 
   # GET /tasks/1 or /tasks/1.json

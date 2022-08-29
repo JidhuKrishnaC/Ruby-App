@@ -23,6 +23,10 @@ gem 'wicked_pdf'
 
 gem 'wkhtmltopdf-binary'
 
+gem 'prawn'
+
+gem 'prawn-table'
+
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 
